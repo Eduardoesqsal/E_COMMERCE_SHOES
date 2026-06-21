@@ -252,6 +252,24 @@ export const products: Product[] = [
     colors: ["#ffffff", "#f5f5f5"],
     sizes: ["7", "8", "9", "10", "11", "12", "13"],
   },
+  {
+    id: "13",
+    name: "Cloud Lace White",
+    description:
+      "Effortless lifestyle sneaker in breathable white knit with contrast stitching. A cloud-like cushioned sole and padded heel make every step feel weightless.",
+    price: 79.99,
+    images: [
+      "https://images.unsplash.com/photo-1631167986287-1c3e6dd0597c?w=800&q=80",
+      "https://images.unsplash.com/photo-1608229751021-ed4bd8677753?w=800&q=80",
+    ],
+    category: "Lifestyle",
+    rating: 4.3,
+    reviews: 892,
+    inStock: true,
+    featured: false,
+    colors: ["#ffffff", "#f8f8f8"],
+    sizes: ["7", "8", "9", "10", "11", "12"],
+  },
 ];
 
 export const siteConfig = {
