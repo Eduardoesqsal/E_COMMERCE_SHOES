@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Minus, Plus, Trash2 } from "lucide-react";
 import { formatPrice } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { useCart } from "@/store/cart";
 import type { CartItem as CartItemType } from "@/lib/types";
 

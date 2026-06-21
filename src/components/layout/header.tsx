@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ShoppingBag, Sun, Moon, Menu, X, Search } from "lucide-react";
+import { ShoppingBag, Sun, Moon, Menu, X } from "lucide-react";
 import { useTheme } from "@/components/theme-provider";
 import { useCart } from "@/store/cart";
 import { siteConfig } from "@/lib/constants";
