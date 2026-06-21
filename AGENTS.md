@@ -8,6 +8,7 @@
 - Jest + ts-jest + @testing-library/react para tests
 - Lucide React para iconos
 - pnpm como package manager
+- Docker (multi-stage build, imagen basada en `node:22-alpine`)
 
 ## Comandos esenciales
 
@@ -58,7 +59,7 @@ pnpm test:watch # Tests en watch mode
 
 ## CI/CD
 
-- **GitHub Actions**: `.github/workflows/ci.yml` — corre lint + test + build en cada push a `main`
+- **GitHub Actions**: `.github/workflows/ci.yml` — corre lint + test + build + Docker build en cada push a `main`
 - **Netlify**: deploy automático conectado al repo — https://white-kicks.netlify.app
 - **Flujo**: `git add` → `git commit` → `git push` → CI corre → Netlify deploya
 - Para cambios de productos/constantes, actualizar `src/lib/constants.ts`
