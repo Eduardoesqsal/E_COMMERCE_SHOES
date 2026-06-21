@@ -270,6 +270,25 @@ export const products: Product[] = [
     colors: ["#ffffff", "#f8f8f8"],
     sizes: ["7", "8", "9", "10", "11", "12"],
   },
+  {
+    id: "14",
+    name: "Pure Flex Knit White",
+    description:
+      "Modern knit sneaker with a seamless upper and flexible sole unit. The all-white palette with subtle texture delivers a clean, contemporary edge.",
+    price: 139.99,
+    originalPrice: 169.99,
+    images: [
+      "https://images.unsplash.com/photo-1608229751021-ed4bd8677753?w=800&q=80",
+      "https://images.unsplash.com/photo-1773580995800-88e4ce19c26f?w=800&q=80",
+    ],
+    category: "Casual",
+    rating: 4.5,
+    reviews: 1102,
+    inStock: true,
+    featured: true,
+    colors: ["#ffffff", "#f2f2f2"],
+    sizes: ["7", "8", "9", "10", "11", "12", "13"],
+  },
 ];
 
 export const siteConfig = {
