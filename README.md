@@ -66,3 +66,29 @@ El carrito usa **Zustand** con persistencia en localStorage (`cart-storage`).
 ## Imágenes
 
 Las imágenes de productos son de [Unsplash](https://unsplash.com), configuradas en `next.config.ts` bajo `remotePatterns`.
+
+## CI/CD
+
+### Integración Continua (GitHub Actions)
+
+Cada push a `main` o PR ejecuta automáticamente:
+1. `pnpm lint` — ESLint
+2. `pnpm test` — Jest (44 tests)
+3. `pnpm build` — Build de Next.js
+
+Workflow: `.github/workflows/ci.yml`
+
+### Deploy Continuo (Netlify)
+
+Netlify está conectado al repo. Cada push a `main` dispara un deploy automático.
+
+- **URL**: https://white-kicks.netlify.app
+- **Config**: `netlify.toml` en la raíz
+
+### Flujo DevOps
+
+```
+git add . → git commit -m "mensaje" → git push
+  ├─ GitHub Actions: lint + test + build
+  └─ Netlify: deploy automático
+```
